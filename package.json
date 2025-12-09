@@ -17,25 +17,32 @@
 		},
 		"./package.json": "./package.json"
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"publishConfig": {
 		"access": "public"
 	},
-	"packageManager": "pnpm@9.15.1",
+	"packageManager": "pnpm@10.25.0",
 	"author": {
 		"name": "John Paul Calvo",
-		"email": "calvojp92@gmail.com"
+		"email": "looselytiedshoelace@gmail.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/JohnPaulCalvo/tailwind-zag.git"
+		"url": "git+https://github.com/CalvoJohnPaul/tailwind-zag.git"
 	},
 	"bugs": {
-		"url": "https://github.com/JohnPaulCalvo/tailwind-zag/issues",
-		"email": "calvojp92@gmail.com"
+		"url": "https://github.com/CalvoJohnPaul/tailwind-zag/issues",
+		"email": "looselytiedshoelace@gmail.com"
 	},
 	"description": "TailwindCSS plugin for zag-powered components",
-	"keywords": ["TailwindCSS", "zag", "Ark UI", "Plugin"],
+	"keywords": [
+		"TailwindCSS",
+		"zag",
+		"Ark UI",
+		"Plugin"
+	],
 	"scripts": {
 		"dev": "tsdown --watch",
 		"test": "vitest",
@@ -45,15 +52,15 @@
 		"release": "release-it"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@tsconfig/node22": "^22.0.0",
-		"@types/node": "^22.10.2",
-		"postcss": "^8.4.49",
-		"release-it": "^17.11.0",
+		"@biomejs/biome": "^2.3.8",
+		"@tsconfig/node22": "^22.0.5",
+		"@types/node": "^24.10.2",
+		"postcss": "^8.5.6",
+		"release-it": "^19.0.6",
 		"tailwindcss": "^3.4.17",
-		"tsdown": "^0.13.3",
-		"typescript": "^5.7.2",
-		"vitest": "^2.1.8"
+		"tsdown": "^0.17.2",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.15"
 	},
 	"peerDependencies": {
 		"tailwindcss": "^3.3.3 || ^4.0.0"
@@ -67,8 +74,13 @@
 			"release": false
 		},
 		"hooks": {
-			"before:init": ["pnpm lint", "pnpm test"],
-			"after:bump": ["pnpm build"]
+			"before:init": [
+				"pnpm lint",
+				"pnpm test"
+			],
+			"after:bump": [
+				"pnpm build"
+			]
 		}
 	}
 }

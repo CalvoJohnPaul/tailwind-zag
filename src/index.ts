@@ -103,6 +103,7 @@ const STATIC_VARIANT_ENTRIES: StaticVariantEntry[] = [
 	{key: 'empty', values: [null]},
 	{key: 'fullscreen', values: [null]},
 	{key: 'loading', values: [null]},
+	{key: 'loaded', values: [null]},
 ];
 
 export interface DynamicVariantEntry {
@@ -119,7 +120,7 @@ const DEFAULT_DYNAMIC_VARIANT_ENTRY_KNOWN_INT_VALUES = Array.from<never>({
 }, {});
 
 function isInt(subject: string) {
-	return !Number.isNaN(Number.parseInt(subject));
+	return !Number.isNaN(Number.parseInt(subject, 36));
 }
 
 const DYNAMIC_VARIANT_ENTRIES: DynamicVariantEntry[] = [
