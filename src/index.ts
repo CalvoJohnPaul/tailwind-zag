@@ -104,6 +104,15 @@ const STATIC_VARIANT_ENTRIES: StaticVariantEntry[] = [
 	{key: 'fullscreen', values: [null]},
 	{key: 'loading', values: [null]},
 	{key: 'loaded', values: [null]},
+	{key: 'overflow-x', values: [null]},
+	{key: 'overflow-y', values: [null]},
+	{key: 'scrolling', values: [null]},
+	{key: 'at-top', values: [null]},
+	{key: 'at-bottom', values: [null]},
+	{key: 'at-left', values: [null]},
+	{key: 'at-right', values: [null]},
+	{key: 'reverse', values: [null]},
+	{key: 'clone', values: [null]},
 ];
 
 export interface DynamicVariantEntry {
@@ -124,6 +133,7 @@ function isInt(subject: string) {
 }
 
 const DYNAMIC_VARIANT_ENTRIES: DynamicVariantEntry[] = [
+	{key: 'id'},
 	{key: 'scope'},
 	{key: 'part'},
 	{key: 'value'},
